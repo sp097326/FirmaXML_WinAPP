@@ -9,6 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="59,57,0,0" Text="Copia o escribe tu XML:" TextWrapping="Wrap" VerticalAlignment="Top" Width="619" SelectionChanged="TextBlock_SelectionChanged" FontSize="48" FontFamily="Bernard MT Condensed"/>
+        <TextBox x:Name="xmltxtbox" HorizontalAlignment="Left" Margin="59,182,0,0" Text="&lt;xml&gt;My XML &lt;/xml&gt;" VerticalAlignment="Top" Height="236" Width="633" AcceptsReturn="True"/>
+        <Button Content="Firmar XML" HorizontalAlignment="Left" Margin="593,44,0,0" VerticalAlignment="Top" Height="82" Width="247" FontSize="36" AllowDrop="True" Click="Button_Click"/>
+        <TextBlock x:Name="resultXmlText" HorizontalAlignment="Left" Margin="792,182,0,0" Text="Resulting XML" TextWrapping="Wrap" VerticalAlignment="Top" Height="716" Width="635" FontSize="24" IsTextSelectionEnabled="True" RequestedTheme="Light" />
+        <Button x:Name="listcertsbtn" HorizontalAlignment="Left" Margin="899,44,0,0" VerticalAlignment="Top" Height="82" Width="321" FontSize="36" Content="listCertificates" Click="listcertsbtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="59,450,0,0" Text="Cert File (.cer):" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontSize="36"/>
+        <TextBox x:Name="txtCertRoute" HorizontalAlignment="Left" Margin="59,503,0,0" Text="ruta al .cer" VerticalAlignment="Top" Width="475" Height="57" FontSize="36" MaxLength="255" TextWrapping="NoWrap"/>
+        <TextBlock HorizontalAlignment="Left" Margin="59,595,0,0" Text="Key File (.key):" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="txtKeyRoute" HorizontalAlignment="Left" Height="54" Margin="59,668,0,0" Text="ruta al .key" VerticalAlignment="Top" Width="475" FontSize="36" MaxLength="255" TextWrapping="NoWrap"/>
+        <Button Content="carga FIEL" HorizontalAlignment="Left" Margin="59,781,0,0" VerticalAlignment="Top" Height="59" Width="222" FontSize="36" Click="Button_Click_1"/>
+        <Button x:Name="pickCerbtn" Content="Selecciona .cer" HorizontalAlignment="Left" Margin="539,500,0,0" VerticalAlignment="Top" Height="57" Width="153" FontSize="20" Click="pickCerbtn_ClickAsync"/>
+        <Button x:Name="pickKeyBtn" Content="Selecciona .key" HorizontalAlignment="Left" Height="54" Margin="539,668,0,0" VerticalAlignment="Top" Width="153" FontSize="20" Click="pickKeyBtn_ClickAsync"/>
 
     </Grid>
 </Page>
